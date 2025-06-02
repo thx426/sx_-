@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 - SX实习通</title>
+  <meta name="description" content="联系SX实习通团队，获取更多关于金融行业求职和实习机会的信息，提出您的问题或反馈。">
+  <meta name="keywords" content="联系SX实习通,金融实习咨询,求职问题解答,合作洽谈">
+  <!-- 样式表 -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font Awesome 图标 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">SX实习通</span>
+      </div>
+      <button class="nav-toggle" aria-label="切换导航菜单">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="about.html" class="nav-link">关于我们</a>
+        <a href="products.html" class="nav-link">产品服务</a>
+        <a href="contact.html" class="nav-link active">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 页面标题区 -->
+  <section class="page-title">
+    <div class="container">
+      <h1>联系我们</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+          <li class="breadcrumb-item active" aria-current="page">联系我们</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 联系信息与表单 -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>与我们取得联系</h2>
+          <p class="mb-4">无论您是有问题需要解答，还是想与我们合作，都欢迎随时联系我们。我们的团队将尽快回复您。</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3>电子邮件</h3>
+                <p>contact@sxshixi.com</p>
+                <p class="detail-note">工作日24小时内回复</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>电话</h3>
+                <p>010-12345678</p>
+                <p class="detail-note">周一至周五 9:00-18:00</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>地址</h3>
+                <p>北京市海淀区学院南路39号</p>
+                <p class="detail-note">中央财经大学</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="contact-text">
+                <h3>社交媒体</h3>
+                <div class="social-links">
+                  <a href="#" aria-label="微信" class="social-link"><i class="fab fa-weixin"></i> 微信</a>
+                  <a href="#" aria-label="微博" class="social-link"><i class="fab fa-weibo"></i> 微博</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="qr-codes mt-4">
+            <div class="qr-code-item">
+              <div style="width: 120px; height: 120px; background-color: #fff; border: 1px solid #ddd; margin: 0 auto 10px; display: flex; justify-content: center; align-items: center;">
+                <i class="fas fa-qrcode" style="font-size: 80px; color: #003366;"></i>
+              </div>
+              <div class="qr-code-label">小程序二维码</div>
+            </div>
+            
+            <div class="qr-code-item">
+              <div style="width: 120px; height: 120px; background-color: #fff; border: 1px solid #ddd; margin: 0 auto 10px; display: flex; justify-content: center; align-items: center;">
+                <i class="fas fa-qrcode" style="font-size: 80px; color: #1E90FF;"></i>
+              </div>
+              <div class="qr-code-label">公众号二维码</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <h2>发送消息</h2>
+          <p>请填写下面的表单，我们会尽快与您联系</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">您的姓名</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">电子邮件</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">电话号码</label>
+              <input type="tel" id="phone" name="phone" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">主题</label>
+              <select id="subject" name="subject" class="form-control" required>
+                <option value="">请选择...</option>
+                <option value="求职咨询">求职咨询</option>
+                <option value="产品使用">产品使用</option>
+                <option value="企业合作">企业合作</option>
+                <option value="投诉建议">投诉建议</option>
+                <option value="其他">其他</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">消息内容</label>
+              <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100">发送消息</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="faq py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">常见问题</h2>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" data-toggle="collapse" data-target="#faq1">
+            <h3>如何注册使用SX实习通小程序？</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer collapse" id="faq1">
+            <p>您可以通过微信搜索"SX实习通"小程序或扫描本页面的二维码直接访问。首次使用需要进行简单注册，填写基本信息后即可开始使用所有功能。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" data-toggle="collapse" data-target="#faq2">
+            <h3>SX实习通的求职服务收费吗？</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer collapse" id="faq2">
+            <p>SX实习通的基础服务完全免费，包括实习信息浏览、AI问答基础功能、短视频观看等。对于一些高级功能，如个性化求职指导、简历深度优化等，我们提供付费增值服务。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" data-toggle="collapse" data-target="#faq3">
+            <h3>企业如何在SX实习通发布实习岗位？</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer collapse" id="faq3">
+            <p>如果您是企业HR或招聘负责人，可以通过联系我们的企业合作邮箱：business@sxshixi.com 申请成为合作企业。我们的团队会在1-2个工作日内与您联系，协助完成企业认证和岗位发布流程。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" data-toggle="collapse" data-target="#faq4">
+            <h3>AI问答系统如何保证专业性？</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer collapse" id="faq4">
+            <p>我们的AI问答系统基于大规模金融专业知识库构建，同时邀请了多位金融行业专家参与知识审核。系统会定期更新行业最新信息，确保回答的专业性和时效性。如果遇到系统无法解答的问题，我们还提供人工专家答疑服务。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" data-toggle="collapse" data-target="#faq5">
+            <h3>如何投稿分享我的求职经验？</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer collapse" id="faq5">
+            <p>我们非常欢迎用户分享自己的求职经验。您可以通过小程序的"经验分享"入口提交您的故事，或发送邮件至share@sxshixi.com。经我们编辑审核后，您的经验将有机会被制作成短视频或文章分享给更多用户，并获得相应的奖励。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作机会 -->
+  <section class="cooperation py-5">
+    <div class="container">
+      <h2 class="section-title">合作机会</h2>
+      <p class="text-center mb-5">我们期待与各类机构和个人建立合作关系，共同为金融专业学生提供更好的求职服务</p>
+      
+      <div class="cooperation-cards">
+        <div class="cooperation-card">
+          <div class="coop-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>企业合作</h3>
+          <p>为金融行业企业提供优质实习生资源，建立校企合作渠道</p>
+          <a href="#" class="btn btn-outline-primary">了解详情</a>
+        </div>
+        
+        <div class="cooperation-card">
+          <div class="coop-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3>院校合作</h3>
+          <p>与高校金融专业开展深度合作，助力学生就业和实习</p>
+          <a href="#" class="btn btn-outline-primary">了解详情</a>
+        </div>
+        
+        <div class="cooperation-card">
+          <div class="coop-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>行业专家合作</h3>
+          <p>诚邀金融行业专家加入我们的导师团队，分享经验与见解</p>
+          <a href="#" class="btn btn-outline-primary">了解详情</a>
+        </div>
+        
+        <div class="cooperation-card">
+          <div class="coop-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>内容合作</h3>
+          <p>与教育机构、媒体平台共同开发金融求职相关内容和课程</p>
+          <a href="#" class="btn btn-outline-primary">了解详情</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 地图位置 -->
+  <section class="location py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">我们的位置</h2>
+      
+      <div class="map-container">
+        <div class="map-placeholder">
+          <!-- 这里用简单的占位符替代实际地图，实际项目中应使用真实地图API -->
+          <div style="background-color: #e9e9e9; height: 400px; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
+            <div style="text-align: center;">
+              <i class="fas fa-map-marked-alt" style="font-size: 80px; color: #003366;"></i>
+              <h3 class="mt-3">北京市海淀区学院南路39号</h3>
+              <p>中央财经大学</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-details mt-4">
+          <div class="detail-item">
+            <i class="fas fa-subway"></i>
+            <span>地铁：10号线学院路站，步行10分钟</span>
+          </div>
+          
+          <div class="detail-item">
+            <i class="fas fa-bus"></i>
+            <span>公交：386路、498路、584路，学院南路站下车</span>
+          </div>
+          
+          <div class="detail-item">
+            <i class="fas fa-parking"></i>
+            <span>停车：校内有访客停车位，请提前预约</span>
+          </div>
+          
+          <div class="detail-item">
+            <i class="fas fa-clock"></i>
+            <span>开放时间：周一至周五 9:00-18:00，节假日休息</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚部分 -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-section">
+        <h4 class="footer-title">SX实习通</h4>
+        <p>连接金融梦想，铺就职业未来</p>
+        <p>为金融专业学生提供全方位求职实习服务</p>
+        <div class="social-links">
+          <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+          <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+          <a href="#" aria-label="QQ"><i class="fab fa-qq"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-title">快速链接</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="products.html">产品服务</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-title">联系方式</h4>
+        <ul class="footer-links">
+          <li><i class="fas fa-envelope"></i> contact@sxshixi.com</li>
+          <li><i class="fas fa-phone"></i> 010-12345678</li>
+          <li><i class="fas fa-map-marker-alt"></i> 北京市海淀区学院南路39号</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-title">订阅资讯</h4>
+        <p>订阅我们的资讯，获取最新金融实习信息</p>
+        <form class="subscription-form mt-3">
+          <input type="email" placeholder="请输入您的邮箱" class="form-control mb-2">
+          <button type="submit" class="btn btn-secondary">订阅</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <div class="container">
+        &copy; 2025 SX实习通 版权所有
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript 脚本 -->
+  <script src="js/main.js"></script>
+  <script>
+    // 常见问题折叠功能
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+      question.addEventListener('click', function() {
+        const target = this.getAttribute('data-target');
+        const answer = document.querySelector(target);
+        
+        // 关闭其他所有展开的答案
+        document.querySelectorAll('.faq-answer.show').forEach(function(item) {
+          if (item.id !== target.substr(1)) {
+            item.classList.remove('show');
+            const q = document.querySelector(`[data-target="#${item.id}"]`);
+            if (q) q.querySelector('i').classList.remove('fa-chevron-up');
+            if (q) q.querySelector('i').classList.add('fa-chevron-down');
+          }
+        });
+        
+        // 切换当前答案的显示状态
+        answer.classList.toggle('show');
+        
+        // 切换图标
+        const icon = this.querySelector('i');
+        if (answer.classList.contains('show')) {
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        } else {
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        }
+      });
+    });
+    
+    // 表单提交
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // 获取表单数据
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      // 在实际项目中，这里应该发送Ajax请求到后端处理
+      // 这里只做简单的前端验证和提示
+      
+      if (name && email && message) {
+        alert('感谢您的留言！我们会尽快回复您。');
+        this.reset();
+      } else {
+        alert('请填写所有必填字段');
+      }
+    });
+  </script>
+</body>
+</html>
